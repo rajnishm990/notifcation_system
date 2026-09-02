@@ -37,9 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'corsheader',
+    'api'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -116,6 +120,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+CORS_ALLOW_ALL_ORIGINS = True # Will change it in vercel .. good as of now
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
