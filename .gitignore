@@ -1,0 +1,46 @@
+
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+
+# Virtual Environment
+backend/.venv/
+backend/venv/
+backend/env/
+backend/ENV/
+
+# Python cache
+backend/__pycache__/
+backend/*.py[cod]
+backend/*$py.class
+
+# Django local settings & secrets
+backend/local_settings.py
+backend/.env
+backend/db.sqlite3
+
+# Django media and static collected files
+backend/media/
+backend/staticfiles/
+
+
+# Dependencies
+frontend/node_modules/
+
+# Production build output
+frontend/dist/
+frontend/build/
+
+# Vite local env files
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+
+# Vite / Frontend cache
+frontend/.vite/
+frontend/.eslintcache
