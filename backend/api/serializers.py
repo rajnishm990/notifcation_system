@@ -1,4 +1,4 @@
-from rest_framework import serilaizers 
+from rest_framework import serializers
 from .models import Trigger, Template 
 
 class TemplateSerializer(serializers.ModelSerializer):
