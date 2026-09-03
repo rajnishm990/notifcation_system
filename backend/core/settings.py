@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -120,7 +121,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-CORS_ALLOW_ALL_ORIGINS = True # Will change it in vercel .. good as of now
+# CORS_ALLOW_ALL_ORIGINS = True # Will change it in vercel .. good as of now
+
+CORS_ALLOWED_ORIGINS = [
+    "https://app.vercel.app", 
+    "http://localhost:5173"
+]
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
